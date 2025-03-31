@@ -1,6 +1,6 @@
-##### Caption: Performance comparison under step size (0.06) consistent with other masks on ImageNet inpainting tasks. Langevin sampling exhibits divergence (Langevin-10 > Langevin-5 > Replace) for Box, while LanPaint variants (BiG, FLD, and combined scores) maintain superior results. Highlighted values (bold) demonstrate LanPaint’s robustness to step size increases.
+##### Caption: Performance comparison between reduced step size (0.03 on Box, 0.04 on Checkerboard) VS fixed step size (0.06, consistent with CelebA) on ImageNet. Langevin sampling exhibits $\color{red}{divergence}$  (LPIPS Langevin-10 > Langevin-5 > Replace) for Box at step size 0.06, while LanPaint variants maintain superior results across different step sizes.
 
-| Method                      | ImageNet Box (Main text, 0.03) | ImageNet Checkerboard (Main text, 0.04) | ImageNet Box (0.06) | ImageNet Checkerboard (0.06) |
+| Method                      | ImageNet Box (reduced) | ImageNet Checkerboard (reduced) | ImageNet Box (0.06) | ImageNet Checkerboard (0.06) |
 |-----------------------------|--------------|------------------------|---------------------|-------------------------------|
 | Langevin-10                 | 0.221        | 0.231                 | $\color{red}{0.279}$         | 0.236                  |
 | Langevin-5                  | 0.226        | 0.314                 | $\color{red}{0.262}$                   |0.307
