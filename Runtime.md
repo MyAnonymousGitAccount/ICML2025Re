@@ -1,0 +1,3 @@
+Caption: Runtime per image (NVIDIA RTX 3090, ImageNet 256×256, Box) for methods using 20 diffusion sampling steps. LanPaint-5/10 denote 5/10 inner steps per diffusion step (e.g., LanPaint-5 = 20×5 U-Net calls). Total compute scales linearly inner iterations count: 5 inner iterations (e.g., LanPaint-5, Repaint-5) require ~12s, while 10 inner iterations (LanPaint-10, Repaint-10) double to ~22s.
+![RunTime](https://github.com/MyAnonymousGitAccount/ICML2025Re/blob/main/IMGRUNTIME.png?raw=true)
+One can also easily deduce the runtime of LanPaint by the number behind it. “LanPaint-5” refers to 5 U-Net calls, making runtime ~5x that of unconditional generation with the same memory usage. Besides, typical runtime of LanPaint-5 is 1 min for Stable Diffusion XL at half percision.
