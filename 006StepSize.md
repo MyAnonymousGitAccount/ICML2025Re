@@ -11,3 +11,5 @@
 | **LanPaint-10 (FLD)**       | 0.203        | 0.158                 | 0.215          | 0.141                  |
 | **LanPaint-5 (BiG+FLD)**    | 0.197        | 0.147                 | **0.200**          | 0.137                   |
 | **LanPaint-10 (BiG+FLD)**   | **0.193**    | **0.128**             | 0.212      | **0.123**               |
+
+Note that divergence occurs on ImageNet due to the pre-trained model's scaled linear noise schedule (vs. CelebA's linear schedule), requiring step size adjustments. The results show that LanPaint is stable for both cases.
