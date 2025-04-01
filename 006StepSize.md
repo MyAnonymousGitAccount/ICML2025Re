@@ -1,4 +1,4 @@
-##### Caption: Performance comparison between reduced step size (0.03 on Box, 0.04 on Checkerboard) VS fixed step size (0.06, consistent with CelebA) on ImageNet. Langevin sampling exhibits $\color{red}{divergence}$  (LPIPS Langevin-10 > Langevin-5 > Replace) for Box at step size 0.06, while LanPaint variants maintain superior results across different step sizes.
+##### Caption: Performance comparison between reduced step size (0.03 on Box, 0.04 on Checkerboard, see Appendix D) VS fixed step size (0.06, consistent with CelebA) on ImageNet. Langevin sampling exhibits $\color{red}{divergence}$  (LPIPS Langevin-10 > Langevin-5 > Replace) for Box at step size 0.06, while LanPaint variants maintain superior results across different step sizes.
 
 | Method                      | ImageNet Box (reduced) | ImageNet Checkerboard (reduced) | ImageNet Box (0.06) | ImageNet Checkerboard (0.06) |
 |-----------------------------|--------------|------------------------|---------------------|-------------------------------|
